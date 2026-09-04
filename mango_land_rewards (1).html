@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mango Land 🍋‍🟩 | Mango Rewards</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #fff8cf;
+      color: #3d3a16;
+    }
+    header {
+      background: linear-gradient(135deg, #ffcf25, #ff9f1c);
+      padding: 22px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 14px #0002;
+      position: sticky;
+      top: 0;
+      z-index: 5;
+    }
+    .logo { font-size: 1.55rem; font-weight: 900; }
+    nav a {
+      color: #3d3a16;
+      text-decoration: none;
+      font-weight: 800;
+      margin-left: 20px;
+    }
+    .hero {
+      min-height: 72vh;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 70px 20px;
+      background:
+        radial-gradient(circle at 15% 20%, #ffffff99 0 40px, transparent 41px),
+        radial-gradient(circle at 85% 25%, #ffffff77 0 28px, transparent 29px),
+        linear-gradient(180deg, #fff0a8, #fff8cf);
+    }
+    .mango { font-size: 6rem; filter: drop-shadow(0 8px 5px #0002); }
+    h1 {
+      font-size: clamp(3rem, 8vw, 6.5rem);
+      margin: 5px 0;
+      color: #e87900;
+      line-height: .95;
+    }
+    .hero p {
+      max-width: 720px;
+      margin: 22px auto;
+      font-size: 1.25rem;
+      line-height: 1.55;
+    }
+    .cta {
+      display: inline-block;
+      background: #e85d04;
+      color: white;
+      padding: 16px 27px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 900;
+      font-size: 1.05rem;
+      box-shadow: 0 7px 0 #b84800;
+      transition: transform .15s;
+    }
+    .cta:hover { transform: translateY(3px); box-shadow: 0 4px 0 #b84800; }
+    section { padding: 65px 7%; }
+    .title { text-align: center; font-size: 2.5rem; color: #d95b00; margin-top: 0; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      max-width: 1050px;
+      margin: auto;
+    }
+    .card {
+      background: #fff;
+      border: 3px solid #ffd447;
+      border-radius: 24px;
+      padding: 28px;
+      text-align: center;
+      box-shadow: 0 8px 22px #7c5c0018;
+    }
+    .card .icon { font-size: 3rem; }
+    .card h3 { color: #e87900; font-size: 1.4rem; }
+    .signup {
+      background: #3d3a16;
+      color: white;
+      border-radius: 30px;
+      max-width: 850px;
+      margin: auto;
+      padding: 45px;
+      text-align: center;
+    }
+    .signup h2 { color: #ffd447; font-size: 2.3rem; }
+    form {
+      display: flex;
+      gap: 10px;
+      max-width: 600px;
+      margin: 25px auto 10px;
+    }
+    input {
+      flex: 1;
+      border: 0;
+      border-radius: 999px;
+      padding: 16px 20px;
+      font-size: 1rem;
+    }
+    button {
+      border: 0;
+      border-radius: 999px;
+      padding: 16px 24px;
+      background: #ffb703;
+      color: #3d3a16;
+      font-weight: 900;
+      cursor: pointer;
+    }
+    #message { min-height: 24px; color: #ffe27a; font-weight: 800; }
+    .email {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 35px;
+      border-radius: 25px;
+      border-left: 10px solid #ffb703;
+      line-height: 1.7;
+      box-shadow: 0 8px 22px #7c5c0018;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #ffcf25;
+      font-weight: 800;
+    }
+    @media (max-width: 750px) {
+      .cards { grid-template-columns: 1fr; }
+      form { flex-direction: column; }
+      nav { display: none; }
+      .signup { padding: 30px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🥭 MANGO LAND</div>
+  <nav>
+    <a href="#rewards">Rewards</a>
+    <a href="#signup">Subscribe</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div>
+      <div class="mango">🥭</div>
+      <h1>MANGO REWARDS</h1>
+      <p>
+        Welcome to Mango Land! Sign up for the Mango Rewards subscription
+        and get <strong>FREE MANGO REWARDS</strong> whenever you visit Mango Land.
+      </p>
+      <a class="cta" href="#signup">GET MY FREE REWARDS 🥭</a>
+    </div>
+  </section>
+
+  <section id="rewards">
+    <h2 class="title">What's in the Mango Bag?</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="icon">🥭</div>
+        <h3>Free Mango Rewards</h3>
+        <p>Enjoy special mango rewards whenever you visit Mango Land.</p>
+      </div>
+      <div class="card">
+        <div class="icon">⭐</div>
+        <h3>Mango VIP Status</h3>
+        <p>Show off your extremely official Mango Land subscriber status.</p>
+      </div>
+      <div class="card">
+        <div class="icon">💥</div>
+        <h3>BOOM BOOM Deliciousness</h3>
+        <p>Because apparently that's what happens when mango deliciousness hits.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="signup">
+    <div class="signup">
+      <h2>🥭 Join Mango Land Rewards!</h2>
+      <p>Enter your email to become a certified Mango Land rewards subscriber.</p>
+      <form id="rewardForm">
+        <input id="emailInput" type="email" placeholder="your@email.com" required>
+        <button type="submit">SUBSCRIBE</button>
+      </form>
+      <div id="message"></div>
+      
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  🥭 MANGOLAND4EVER 🥭 &nbsp; | &nbsp; Officially managed by the Mango Manager
+</footer>
+
+<script>
+  document.getElementById("rewardForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const email = document.getElementById("emailInput").value;
+    document.getElementById("message").textContent =
+      "🥭 YAY! " + email + " is now on the Mango List! #MANGOLAND4EVER";
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
